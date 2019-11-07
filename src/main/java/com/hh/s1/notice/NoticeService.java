@@ -2,11 +2,14 @@ package com.hh.s1.notice;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import org.springframework.ui.Model;
 import org.springframework.web.servlet.ModelAndView;
 
 public class NoticeService {
 	
+	@Inject
 	private NoticeDAO noticeDAO;
 	
 	public NoticeService() {
