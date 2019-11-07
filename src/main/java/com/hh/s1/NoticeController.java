@@ -2,6 +2,8 @@ package com.hh.s1;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,11 +18,16 @@ import com.hh.s1.notice.NoticeService;
 @RequestMapping("/notice/**")
 public class NoticeController {
 	
+	@Inject
 	private NoticeService noticeService ;
 	
-	public NoticeController() {
-		noticeService = new NoticeService();
-	}
+	
+	
+	/*
+	 * public NoticeController() { 
+	 * 	noticeService = new NoticeService(); 
+	 * }
+	 */
 	
 	
 	//write중에서 post방식

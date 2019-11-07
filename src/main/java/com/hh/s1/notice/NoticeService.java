@@ -9,13 +9,15 @@ public class NoticeService {
 	
 	private NoticeDAO noticeDAO;
 	
-	public NoticeService() {
+	
+	public void setNoticeDAO(NoticeDAO noticeDAO) {
+		this.noticeDAO = noticeDAO;
 		
-		this.noticeDAO = new NoticeDAO();
+		
 		
 	}
 	
-	
+
 	public List<NoticeDTO> noticeList() throws Exception{
 		
 		List<NoticeDTO> ar= noticeDAO.noticeList();
